@@ -1,8 +1,10 @@
 .background {
     background-image: url("background.png");
+    background-size: cover;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
+    position: absolute;
+    overflow: hidden;
 
 }
 
@@ -15,3 +17,68 @@
     margin-top: 380px;
     position: absolute;
 } 
+
+.score{
+
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 30px;
+
+}
+
+.block{
+
+    position: absolute;
+    background-image: url("flame.gif");
+    background-size: cover;
+    width: 70px;
+    height: 120px;
+    margin-top: 450px;
+
+}
+
+.endScreen{
+
+    position: absolute;
+    width: 220px;
+    height: 380px;
+
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+
+    margin-left: 600px;
+    margin-top: 100px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+    visibility: hidden;
+
+}
+
+.endScore{
+
+    font-size: 40px;
+    color: red;
+
+}
+
+.btn {
+
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+
+    background-color: #0000ff;
+    color: rgba(255, 255, 255, 0.836);
+
+}  

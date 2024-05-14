@@ -7,11 +7,20 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
 
-    <body class="body" onkeyup="keyCheck(event);">
+    <body class="body" onkeyup="keyCheck(event);" class="body">
 
-            <div class="background">
+            <div class="background" id="background">
 
                 <img src="Run (1).png" class="boy" id="boy">
+                <div class="score" id="score"> 0 </div>
+
+                <div class="endScreen" id="endScreen">
+                    <div>Game Over</div>
+                    <div>Your Score</div>
+                    <div class="endScore" id="endScore"> 0 </div>
+
+                    <button class="btn" onclick="reload();">Try Again</button>
+                </div>
 
             </div>
 
